@@ -54,7 +54,7 @@ Currently, it supports most of postfixadmin's encryption options, except dovecot
 It was tested and developed for a postfixadmin database.
 
 Password changing is disabled by default, but can be enabled in the Admin area.
-Caution: user_sql does not recreate password salts, which imposes a security risk. 
+Caution: user_sql does recreate password salts when using the encryption types "system","password_hash" and "Joomla2". Not recreating password salts imposes a security risk. 
 Password salts should be newly generated whenever the password changes.
 
 The column autocomplete works only for MySQL and PostgreSQL database which is used to validate form data.
